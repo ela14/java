@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+<link rel="stylesheet"
+      href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+     href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+ p{ background-color:#FFFFCC;}	
+</style>
+
+<script>
+$(document).ready(function(){
+	var imageName = ["floatingball.gif", "redball.gif", "eightball.gif"];
+		var indexNum = 0;
+	
+	
+	$("#picture").click(function(){
+	$("#picture").fadeOut(300, function(){
+	
+		$("#picture").attr("src", imageName[indexNum]);
+		
+		indexNum++;
+		if (indexNum > 2) {indexNum = 0;}
+		$("#picture").fadeIn(500);
+		
+		}); 
+	});           
+});
+</script>
+
+<body>
+	
+	<h1 id="head1">Heading1</h1>
+	<p>Second line of text.</p>
+	<p>Second line of text.</p>
+	<p>Third line of text.</p>
+	<img id="picture" src="eightball.gif"  alt="ball"/>
+	
+	
+	
+
+
+</body>
+</html> 

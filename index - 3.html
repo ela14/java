@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+<link rel="stylesheet"
+      href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+     href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+ p{ background-color:#FFFFCC;}	
+</style>
+
+<script>
+$(document).ready(function(){
+	var lineNum = 0;
+	
+	
+	$("h1").click(function(){
+		$("p").eq(lineNum).css ("background-color", "red");
+		
+	});           
+});
+</script>
+
+<body>
+	
+	<h1 id="head1">Heading1</h1>
+	<p>Second line of text.</p>
+	<p>Second line of text.</p>
+	<p>Third line of text.</p>
+	<img src="../eightball.gif" id="picture" alt="ball"/>
+	
+	
+	
+
+
+</body>
+</html> 
